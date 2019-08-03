@@ -1,0 +1,11 @@
+name: GoodArms
+version: 1.0
+author: lliiooll
+main: cn.lliiooll.GoodArms
+softdepend: [Vault]
+commands:
+  goodarms:
+    description: Main Command
+    aliases:
+      - ga
+      - qh

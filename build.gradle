@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '2.0.4'
+}
+
+apply plugin: 'com.github.johnrengelman.shadow'
+
+
+group 'cn.lliiooll'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+[compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
+
+repositories {
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    maven { url 'https://repo.codemc.org/repository/nms/' }
+    maven { url 'https://jitpack.io' }
+    maven { url 'https://hub.spigotmc.org/nexus/content/groups/public/' }
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.alibaba:fastjson:1.2.58'
+    compile 'com.github.MilkBowl:VaultAPI:1.7'
+    compile 'org.bukkit:craftbukkit:1.7.10-R0.1-SNAPSHOT'
+}
+shadowJar {
+    classifier = ""
+    dependencies {
+        include(dependency("com.alibaba:fastjson:1.2.58:withDependencies"))
+    }
+    manifest {
+        attributes "Manifest-Version": 1.0
+    }
+    baseName = 'GoodArms'
+    version = '1.0'
+}

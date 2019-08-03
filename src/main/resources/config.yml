@@ -1,0 +1,7 @@
+# 插件消息前缀(*LEVEL*是消息等级)
+prefix: "§c§l[§bGoodArms§7/*LEVEL*§c§l]§f "
+# 勿动
+# 在这里面存在的方案名称必须存在对应的json文件
+# 你可以在http://www.bejson.com/jsoneditoronline/里面生成
+list:
+  - qh1

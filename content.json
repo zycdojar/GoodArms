@@ -1,0 +1,44 @@
+﻿{
+    "name": "qh1",
+    "level": {
+        "max": 120
+    },
+    "update": {
+        "material": {
+            "level1": {
+                "1024": 10,
+                "11100": 10
+            },
+            "level2": {
+                "1024": 10,
+                "11100": 10
+            }
+        },
+        "attribute": {
+            "level1": {
+                "hurt": 10,
+                "crit": 5,
+                "critEffect": 10
+            },
+            "level2": {
+                "hurt": 20,
+                "crit": 20,
+                "critEffect": 20
+            }
+        },
+        "normal": {
+            "hurt": 0.5,
+            "crit": 0.01,
+            "critEffect": 0.001,
+            "material": {
+                "1024": 10,
+                "11100": 10
+            }
+        }
+    },
+    "first": {
+        "hurt": 50,
+        "crit": 1,
+        "critEffect": 1
+    }
+}
